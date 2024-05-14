@@ -5,7 +5,7 @@ import Table from '../components/Table'
 import ProgressBar from '../components/ProgressBar'
 
 
-const dataset = [
+const tender_breakdown = [
   {
     amount: "500",
     name: "Private Tenders",
@@ -30,7 +30,7 @@ const dataset = [
 
 const Index = () => {
   return (
-    <div className='w-full flex flex-col gap-y-8 px-8 '>
+    <div className='w-full flex flex-col gap-y-8 px-16 py-8 '>
 
       {/* cards sections */}
       <section className='flex gap-6 py-4 '>
@@ -90,7 +90,7 @@ const Index = () => {
 
     {/* Table section */}
 
-      <section className=' bg-white p-8 shadow dark:bg-black rounded-[20px]'>
+      <section className=' bg-white p-8 shadow-lg dark:bg-black rounded-[20px]'>
         <div className="flex items-center justify-between mb-5">
           <h5 className="font-bold text-xl dark:text-white-light">Recent Tenders</h5>
           <button type="button" className="font-semibold bg-[#3328a8] text-white px-5 py-3 cursor-pointer rounded-full hover:bg-[#3328a8]/90">
@@ -101,13 +101,13 @@ const Index = () => {
 
     </section>
 
-    <section>
-        <div className="w-[40%] text-gray-700  bg-white shadow-lg rounded-[20px]  dark:shadow-none">
+
+        <section className="w-[40%] text-gray-700  bg-white shadow-lg rounded-[20px]  dark:shadow-none">
           <div className="py-5 px-6">
             <h3 className='font-bold text-xl py-2 border-b-2 mb-3'>Tender Breakdowm</h3>
             <div className='flex gap-y-4 flex-col'>
               {
-                dataset.map((item, index) => (
+                tender_breakdown.map((item, index) => (
                   <div key={index} className='flex flex-col gap-y-2 justify-between'>
                     <div className='flex justify-between'>
                       <div className='flex gap-6'>
@@ -124,8 +124,7 @@ const Index = () => {
             </div>
            
          </div>
-        </div>
-    </section>
+        </section>
 
     </div>
   )

@@ -14,6 +14,7 @@ const MediaObject = lazy(() => import('../pages/Components/MediaObject'));
 const ListGroup = lazy(() => import('../pages/Components/ListGroup'));
 const PricingTable = lazy(() => import('../pages/Components/PricingTable'));
 const LightBox = lazy(() => import('../pages/Components/LightBox'));
+const SingleTender = lazy(() => import('../pages/tender/SingleTender'));
 
 const routes = [
     // dashboard
@@ -79,7 +80,10 @@ const routes = [
         path: '/components/lightbox',
         element: <LightBox />,
     },
-    
+    {
+        path: '/tender/:id',
+        element: <SingleTender />,
+    }
 ];
 
 export { routes };
