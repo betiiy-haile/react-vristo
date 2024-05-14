@@ -12,7 +12,7 @@ const data = [
 
 const SingleTender = () => {
   return (
-    <div className='flex flex-col gap-8 px-16 py-8'>
+    <div className='flex flex-col gap-8 px-8 py-4'>
 
       {/* Detail Section */}
       <section className="w-full text-gray-700  bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-[20px] border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">

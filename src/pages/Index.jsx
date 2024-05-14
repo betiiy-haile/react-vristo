@@ -30,7 +30,7 @@ const tender_breakdown = [
 
 const Index = () => {
   return (
-    <div className='w-full flex flex-col gap-y-8 px-16 py-8 '>
+    <div className='w-full flex flex-col gap-y-8 px-8 py-4 '>
 
       {/* cards sections */}
       <section className='flex gap-6 py-4 '>

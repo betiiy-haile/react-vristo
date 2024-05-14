@@ -135,6 +135,12 @@ const Sidebar = () => {
                                         </li>
                                     </ul>
                                 </AnimateHeight>
+                                <button type="button" className={`nav-link group w-full`} >
+                                    <NavLink to="/tender/1" className="flex items-center">
+                                        <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Tender')}</span>
+                                    </NavLink>
+
+                                </button>
                             </li>
 
                         </ul>
