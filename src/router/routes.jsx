@@ -81,7 +81,7 @@ const routes = [
         element: <LightBox />,
     },
     {
-        path: '/tender/:id',
+        path: '/tender/first-tender',
         element: <SingleTender />,
     }
 ];
