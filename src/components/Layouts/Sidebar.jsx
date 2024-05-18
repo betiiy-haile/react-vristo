@@ -95,7 +95,7 @@ const Sidebar = () => {
                                             <NavLink to="/all-applications">{t('Applications')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/accordions">{t('accordions')}</NavLink>
+                                            <NavLink to="/all-applications/singleApplication">{t('Single Application')}</NavLink>
                                         </li>
                                         <li>
                                             <NavLink to="/components/modals">{t('modals')}</NavLink>

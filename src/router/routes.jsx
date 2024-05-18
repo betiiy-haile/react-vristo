@@ -16,6 +16,7 @@ const PricingTable = lazy(() => import('../pages/Components/PricingTable'));
 const LightBox = lazy(() => import('../pages/Components/LightBox'));
 const SingleTender = lazy(() => import('../pages/tender/SingleTender'));
 const Applications = lazy(() => import('../pages/Applications'))
+const SingleApplication = lazy(() => import('../pages/Applications/SingleApplication'))
 
 const routes = [
     // dashboard
@@ -26,6 +27,10 @@ const routes = [
     {
         path: '/all-applications',
         element: <Applications />,
+    },
+    {
+        path: '/all-applications/singleApplication',
+        element: <SingleApplication />,
     },
     // components page
     {
