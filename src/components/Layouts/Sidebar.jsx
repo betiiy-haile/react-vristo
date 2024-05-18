@@ -92,7 +92,7 @@ const Sidebar = () => {
                                 <AnimateHeight duration={300} height={currentMenu === 'component' ? 'auto' : 0}>
                                     <ul className="sub-menu text-gray-500">
                                         <li>
-                                            <NavLink to="/components/tabs">{t('tabs')}</NavLink>
+                                            <NavLink to="/all-applications">{t('Applications')}</NavLink>
                                         </li>
                                         <li>
                                             <NavLink to="/components/accordions">{t('accordions')}</NavLink>
@@ -138,9 +138,7 @@ const Sidebar = () => {
                                 <NavLink to="/tender/3" className="flex items-center nav-link group w-full">
                                     <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Tender')}</span>
                                 </NavLink>
-
                             </li>
-
                         </ul>
                     </PerfectScrollbar>
                 </div>

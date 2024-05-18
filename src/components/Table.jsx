@@ -45,44 +45,44 @@ const tableData = [
 ];
 
 const Table = () => {
-  return (
-      <div className="table-responsive mb-5">
-          <table className="table-hover">
-              <thead>
-                  <tr>
-                      <th>Tender ID</th>
-                      <th>Dealine in Days</th>
-                      <th>Tender Name</th>
-                      <th>Tender Type</th>
-                      <th>Tender Category</th>
-                      <th>CPO/Bid Bond Amount</th>
-                      <th>Applicants</th>
-                      <th className="text-center">Action</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  {tableData.map((data) => {
-                      return (
-                          <tr key={data.id}>
-                            <td>{data.tender_id} </td>
-                            <td className='text-center flex gap-2 items-center'>
-                                <span className={`w-2 h-2 rounded-full ${data.deadline_in_days < 3 ? "bg-danger" : "bg-success"}`}></span>
-                               <span>{data.deadline_in_days}</span>
-                            </td>
-                            <td>{data.tender_name}</td>
-                            <td>{data.tender_type}</td>
-                            <td>{data.tender_category}</td>
-                            <td>{data.CPO}</td>
-                            <td>{data.applicants}</td>
-                            <td className="text-center cursor-pointer text-2xl">{data.Actions}</td>
-                        
-                          </tr>
-                      );
-                  })}
-              </tbody>
-          </table>
-      </div>
-  )
+    return (
+        <div className="table-responsive mb-5">
+            <table className="table-hover">
+                <thead>
+                    <tr>
+                        <th>Tender ID</th>
+                        <th>Dealine in Days</th>
+                        <th>Tender Name</th>
+                        <th>Tender Type</th>
+                        <th>Tender Category</th>
+                        <th>CPO/Bid Bond Amount</th>
+                        <th>Applicants</th>
+                        <th className="text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {tableData.map((data) => {
+                        return (
+                            <tr key={data.id}>
+                                <td>{data.tender_id} </td>
+                                <td className='text-center flex gap-2 items-center'>
+                                    <span className={`w-2 h-2 rounded-full ${data.deadline_in_days < 3 ? "bg-danger" : "bg-success"}`}></span>
+                                    <span>{data.deadline_in_days}</span>
+                                </td>
+                                <td>{data.tender_name}</td>
+                                <td>{data.tender_type}</td>
+                                <td>{data.tender_category}</td>
+                                <td>{data.CPO}</td>
+                                <td>{data.applicants}</td>
+                                <td className="text-center cursor-pointer text-2xl">{data.Actions}</td>
+
+                            </tr>
+                        );
+                    })}
+                </tbody>
+            </table>
+        </div>
+    )
 }
 
 export default Table

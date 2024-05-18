@@ -529,7 +529,7 @@ hover:text-primary hover:before:!bg-primary ltr:before:mr-2 rtl:before:ml-2 dark
         @apply border-b !border-white-light/40 dark:!border-[#191e3a];
     }
     table.table-hover tbody tr {
-        @apply hover:!bg-white-light/20 dark:hover:!bg-[#1a2941]/40;
+        @apply hover:!bg-green-100/40 hover:rounded-lg hover:shadow rounded dark:hover:!bg-[#1a2941]/40;
     }
     table.table-striped tbody tr:nth-child(odd) {
         @apply !bg-white-light/20 dark:!bg-[#1a2941]/40;
@@ -707,4 +707,8 @@ hover:text-primary hover:before:!bg-primary ltr:before:mr-2 rtl:before:ml-2 dark
 /* Hightlight JS */
 pre.hljs {
     @apply p-6 rounded-md overflow-x-auto !bg-[#191e3a];
+}
+
+table > tr > th, td {
+    @apply text-center;
 }
